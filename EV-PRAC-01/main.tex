@@ -1,0 +1,195 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage[hidelinks]{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\renewcommand{\arraystretch}{1.15}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+
+{\bfseries Universidad Técnica Estatal de Quevedo}\\[4pt]
+Facultad de Ciencias de la Computación --- Carrera de Ingeniería de Software\\[10pt]
+
+{\bfseries Ingeniería de Requerimientos (ISR-401)}\\
+Paralelo B --- SPA 2026--2027\\[10pt]
+
+{\bfseries Evaluación de la Unidad I (EV-PRAC-01)}\\
+EV-SUM-01 en el SGA --- Caso «ALERTARÍO»\\[10pt]
+
+Evaluación práctica individual y presencial
+
+\vfill
+
+\noindent\begin{tabular}{@{}ll@{}}
+\textbf{Apellidos y nombres:} & ROBINSON ESPINOZA JEANPIERRE\\
+\textbf{URL del repositorio:} & \url{https://github.com/jean200525/ISR-401-EV-PRAC-01-}\\
+\textbf{Fecha de la sesión:} & 18 de noviembre de 2026\\
+\end{tabular}
+
+\vfill
+
+Esta es la transcripción fiel de la prueba escrita a mano el 18 de noviembre de 2026; las fotografías de las hojas están en la carpeta \texttt{evidencias/} del repositorio.
+
+\end{titlepage}
+
+\newpage
+
+\section*{T1}
+
+A.- por lo que vimos en la clase un requisito se lo consideraba una necesidad o condición que debe cumplir un sistema para satisfacer las necesidades de los stakeholders, cada requisito debe estar escrito de manera clara y deben comprobarse.
+
+E7 describe cómo se trabaja actualmente: el vigilante mide el nivel del río a las 6 de la mañana y a las 6 de la tarde, comunica el dato por radio y el operador lo anota en un cuaderno.
+
+E7 no es un requisito del producto ALERTARÍO, porque solamente explica el procedimiento que se utiliza actualmente. Sirve como información para conocer el problema y entender qué actividades se podrían mejorar.
+
+E12 tampoco es un requisito del producto, porque indica cómo se realizará el trabajo durante el proyecto. Es un requisito del proceso y debe registrarse en la planificación del proyecto.
+
+\textbf{T1(b). Diferencia entre StRS, SyRS y SRS}
+
+\noindent\begin{tabularx}{\linewidth}{|c|Y|c|Y|}
+\hline
+\textbf{Documento} & \textbf{¿Qué describe?} & \textbf{Ejemplo del caso} & \textbf{¿Por qué?}\\
+\hline
+StRS & Las necesidades y expectativas de los interesados. & E1 & Los presidentes barriales necesitan recibir alertas a tiempo, incluso de madrugada.\\
+\hline
+SyRS & Los requisitos generales del sistema completo, incluyendo hardware y software. & E3 & Describe cómo las estaciones HL-20 envían las lecturas por LoRaWAN cada 5 minutos.\\
+\hline
+SRS & Los requisitos específicos que debe cumplir el software. & E5 & Indica que el sistema debe generar informes mensuales en PDF.\\
+\hline
+\end{tabularx}
+
+\textbf{T1(c). Actividades del proceso de Ingeniería de Requisitos}
+
+\noindent\begin{tabularx}{\linewidth}{|c|c|c|Y|}
+\hline
+\textbf{ID} & \textbf{Actividad} & \textbf{Tipo} & \textbf{Justificación}\\
+\hline
+H1 & Elicitación & Central & La analista visita la Unidad de Gestión de Riesgos y conversa con los operadores para conocer sus necesidades.\\
+\hline
+H2 & Análisis y negociación & Central & Se comparan las alternativas de comunicación y se acuerda utilizar SMS.\\
+\hline
+H3 & Especificación & Central & La analista escribe los requisitos en un documento y les asigna identificadores.\\
+\hline
+H4 & Validación & Central & Los interesados revisan el documento y detectan que falta explicar cómo cancelar una alerta.\\
+\hline
+H5 & Gestión & Transversal & Se registra el cambio de operadora, se revisan los requisitos afectados y se publica una nueva versión.\\
+\hline
+\end{tabularx}
+
+SWEBOK v4.0 y marco de Ingeniería de Requisitos de Pohl.
+
+\section*{T2. Clasificación y auditoría}
+
+\textbf{T2(a). Clasificación de los enunciados E1 a E12}
+
+\noindent\begin{tabularx}{\linewidth}{|c|Y|Y|}
+\hline
+\textbf{ID} & \textbf{Tipo} & \textbf{Documento}\\
+\hline
+E1 & Funcional & StRS\\
+\hline
+E2 & Requisito de dominio & SyRS\\
+\hline
+E3 & Restricción técnica & SyRS\\
+\hline
+E4 & Restricción del proyecto & Ninguno; plan del proyecto\\
+\hline
+E5 & Funcional & SRS\\
+\hline
+E6 & No funcional & SyRS\\
+\hline
+E7 & No es requisito & Ninguno; descripción del proceso actual\\
+\hline
+E8 & No funcional & SRS\\
+\hline
+E9 & Restricción técnica & SyRS\\
+\hline
+E10 & No funcional & SRS\\
+\hline
+E11 & No funcional & SRS\\
+\hline
+E12 & Requisito de proceso & Ninguno; plan de requisitos del proyecto\\
+\hline
+\end{tabularx}
+
+ISO/IEC 29148:2018 y modelo de calidad ISO/IEC 25010:2023.
+
+\textbf{T2(b). Auditoría de los requisitos B1 a B6}
+
+NO LA REALICE
+
+\section*{T3. Redacción de requisitos bien formados}
+
+\noindent\begin{tabularx}{\linewidth}{|c|Y|c|}
+\hline
+\textbf{ID} & \textbf{Enunciado del requisito} & \textbf{Tipo}\\
+\hline
+B1a & Cuando existan 500 usuarios conectados al mismo tiempo, el sistema deberá cargar el mapa de las seis estaciones en menos de 3 segundos. & No funcional\\
+\hline
+B1b & Cuando un vecino se registre por primera vez, la aplicación deberá completar el registro en un máximo de 3 minutos. & No funcional\\
+\hline
+B2 & Cuando la lectura del nivel del río en el puente principal supere los 4,5 metros, el sistema deberá clasificar la situación como alerta naranja; cuando supere los 5,5 metros, deberá clasificarla como alerta roja. & Funcional / dominio\\
+\hline
+B3 & Cada vez que las estaciones HL-20 transmitan una lectura, el sistema deberá recibir y registrar el nivel del agua de las seis estaciones cada 5 minutos mediante el protocolo LoRaWAN. & Funcional\\
+\hline
+B5 & Al finalizar cada mes, el sistema deberá generar un informe en formato PDF con los niveles registrados por cada una de las seis estaciones. & Funcional\\
+\hline
+N1 & Cuando un operador autorizado cancele una alerta, el sistema deberá registrar el usuario responsable y la acción realizada. & Funcional\\
+\hline
+\end{tabularx}
+
+\section*{T4. Sustento normativo de la calidad}
+
+\textbf{T4(a). Características de los requisitos individuales según ISO 29148}
+
+\noindent\begin{tabularx}{\linewidth}{|c|Y|c|}
+\hline
+\textbf{Característica} & \textbf{¿Qué exige?} & \textbf{Propiedad SMART relacionada}\\
+\hline
+Necesario & Debe representar una necesidad real del sistema o de sus interesados. & Ninguna\\
+\hline
+Singular & Debe expresar una sola obligación y no mezclar varias condiciones independientes. & Ninguna\\
+\hline
+No ambiguo & Debe tener un solo significado y utilizar palabras claras. & específico\\
+\hline
+Verificable & Debe poder comprobarse mediante pruebas, inspecciones o demostraciones. & medible\\
+\hline
+Factible & Debe poder realizarse con los recursos y condiciones disponibles. & alcanzable y realizable\\
+\hline
+\end{tabularx}
+
+\textbf{T4(b). Dos defectos del conjunto de requisitos}
+
+\textbf{Defecto 1. Falta de completitud}
+
+\begin{itemize}
+\item Característica afectada: Completitud del conjunto de requisitos
+\item Identificadores: E10 y H4.
+\item Problema: E10 explica que los operadores autorizados pueden emitir o cancelar alertas, pero no detalla cómo debe registrarse correctamente una cancelación. H4 confirma que los interesados encontraron esta falta durante la revisión del documento.
+\item Solución: Agregar un requisito que indique que, cuando un operador autorizado cancele una alerta, el sistema registre quién realizó la acción y la información correspondiente.
+\end{itemize}
+
+\textbf{Defecto 2. Inconsistencia en las condiciones de funcionamiento}
+
+\begin{itemize}
+\item Característica afectada: Consistencia del conjunto de requisitos
+\item Identificadores: B3, E3 y E6.
+\item Problema: B3 exige que el sistema mida en todos los puntos del río, en todo momento, incluso sin energía ni señal y para siempre. Sin embargo, E3 establece que existen seis estaciones HL-20 que transmiten lecturas por radio cada 5 minutos, mientras que E6 solamente establece una condición de funcionamiento durante cortes eléctricos de hasta 12 horas.
+\item Solución: Reemplazar B3 por un requisito realista que establezca la recepción y el registro de las lecturas de las seis estaciones cada 5 minutos, considerando las condiciones de energía y comunicación disponibles.
+\end{itemize}
+
+ISO/IEC/IEEE 29148:2018, cláusula 5.2.6.
+
+\end{document}
